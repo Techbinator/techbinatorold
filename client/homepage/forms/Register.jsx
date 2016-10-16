@@ -16,6 +16,8 @@ export default class RegisterForm extends Component {
         if( error){
           //in case of error user bert to show it
           Bert.alert( error, 'danger', 'growl-top-right' )
+        } else {
+          FlowRouter.go('dashboard')
         }
       })
   }

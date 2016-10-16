@@ -1,7 +1,6 @@
 import React,{Component,findDOMNode} from 'react'
 import 'animate.css'
 import RegisterForm from '../forms/Register'
-import {$} from 'meteor/jquery'
 
 
 export default class Register extends Component {

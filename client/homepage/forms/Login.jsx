@@ -14,7 +14,9 @@ export default class LoginForm extends Component {
         if(error !== undefined){
           //in case of error user bert to show it
           Bert.alert( error, 'danger', 'growl-top-right' )
-         }
+        } else {
+          FlowRouter.go('dashboard')
+        }
       });
   }
 
